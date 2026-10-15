@@ -13,7 +13,6 @@ function printMe(item) {
 }
 coding.forEach(printMe);
 
-// //can pass objects in for each
 
 const myCoding = [
     {
