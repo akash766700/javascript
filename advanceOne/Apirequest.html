@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #212121">
+    <div style="color: beige">
+      0 UNSENT client has been created but open() has not been called yet. 1
+      OPENED client has been created but open() has not been called yet. 2
+      HEADERS RECEIVED client has been created but open() has not been called
+      yet. 3 LOADING client has been created but open() has not been called yet.
+      4 DONE client has been created but open() has not been called yet.
+    </div>
+  </body>
+  <script>
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requestUrl());
+    console.log(xhr.readyState);
+    
+    xhr.send();
+  </script>
+</html>

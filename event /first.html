@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html events</title>
+  </head>
+
+  <body style="background-color: #f8f8f8">
+    <div>
+      <ul>
+        <li class="list-item" id="girl">
+          <img
+            width="200px"
+            src="https://images.pexels.com/photos/16715939/pexels-photo-16715939.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1"
+            alt="Apple"
+          />
+        </li>
+        <li class="list-item" id="sky">
+          <img
+            width="200px"
+            src="https://images.pexels.com/photos/186377/pexels-photo-186377.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1"
+            alt="Orange"
+            onclick="alert('orange clicked')"
+          />
+        </li>
+        <li class="list-item" id="family">
+          <img
+            width="200px"
+            src="https://images.pexels.com/photos/20152197/pexels-photo-20152197.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1"
+            alt="Mango"
+          />
+        </li>
+        <li class="list-item" id="table">
+          <img
+            width="200px"
+            height="200px"
+            src="https://images.pexels.com/photos/707585/pexels-photo-707585.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1"
+            alt="Spinach"
+          />
+        </li>
+        <li class="list-item" id="couple">
+          <img
+            width="200px"
+            src="https://images.pexels.com/photos/3764201/pexels-photo-3764201.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1"
+            alt="Carrot"
+          />
+        </li>
+      </ul>
+    </div>
+    <button>Click Me!</button>
+    <script>
+      //   document.getElementById("sky").onclick = function () {
+      //     alert("orange clicked");
+      //   };
+
+      document.getElementById("sky").addEventListener("click", function (e) {
+        console.log(e);
+        alert("sky clicked");
+      });
+    </script>
+  </body>
+</html>
